@@ -4,9 +4,9 @@ const botaoTema = document.getElementById("mudar-tema");
 const temaSalvo = localStorage.getItem("theme");
 
 if (temaSalvo === "dark") {
-    body.classList.toggle("dark-mode"); 
+    body.classList.add("dark-mode"); 
 }else{
-    body.classList.toggle("dark-mode")
+    body.classList.remove("dark-mode")
 }
 
 botaoTema.addEventListener("click", mudarTema);
