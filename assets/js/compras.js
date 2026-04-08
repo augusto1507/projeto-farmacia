@@ -19,7 +19,7 @@ function carregarCompras(){
             <td>${compra.valorTotal}</td>
             <td>${compra.fornecedorId}</td>
             <td>
-                <a data-id = "${compra.id}" href="/forncedores-form.html?id=${compra.id}" data-action="edit">editar</a>
+                <a data-id = "${compra.id}" href="/compras-form.html?id=${compra.id}" data-action="edit">editar</a>
                 <button class="botao-apagar" data-id="${compra.id}">
                 <i>Deletar</i>
                 </button>

@@ -47,7 +47,7 @@ function editar(payload){
         "headers": {
             "Content-Type":"application/json"
         },
-        "body":JSON.stringify.json(payload)
+        "body":JSON.stringify(payload)
     })
     .then(()=> {
         alert("Alterado com sucesso")
@@ -64,6 +64,8 @@ function carregarCategoriaParaEditar() {
         .then((categoria) => {
             const campoNome = document.getElementById("nome");
             campoNome.value = categoria.nome;
+            const campoCnpj = document.getElementById("cnpj")
+            campoCnpj.value = categoria.cnpj
         })
         .catch(erro => {
             alert("Ocorreu um erro ao carregar os dados da categoria");
