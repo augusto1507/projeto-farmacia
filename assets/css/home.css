@@ -1,0 +1,94 @@
+/* .nav-buttons {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 15px;
+    max-width: 20%;
+    margin: 0 auto;
+
+}
+
+.card {
+    text-decoration: none;
+    display: flex;
+    
+    height: 100px;
+    
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 15px;
+
+}
+
+Código feito por xandeco, desenvolvido e melhorado pela IA abaixo, feito com que o link pareça um botão para ficar mais bonito e fácil de entender
+ */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa; /* fundo claro */
+    color: #1e3a8a; /* azul */
+}
+
+/* 🔴 Barra superior */
+h1 {
+    background-color: #dc2626; /* vermelho */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Saudação */
+p {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+
+/* Container dos cards */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    width: 160px;
+    height: 110px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1e3a8a; /* azul */
+    color: white;
+
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+    transition: 0.3s;
+}
+
+/* Hover */
+.card:hover {
+    background-color: #2563eb; /* azul mais claro */
+    transform: translateY(-5px);
+}
+
+/* Clique */
+.card:active {
+    transform: scale(0.95);
+}
