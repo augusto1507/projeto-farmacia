@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercadoria</title>
+    <link rel="stylesheet" href="/assets/css/mercadoria.css">
 </head>
+
 <body>
     <h1>Lista de Mercadoria</h1>
 
-    <div class="busca-mercadoria">
+    <div id="navegacao">
+        <div class="busca-mercadoria">
         <input type="text" class="busca">
         <button class="busca-button">Buscar</button>
     </div>
 
-    <button class="cadastrar-mercadoria">Cadastrar mercadoria</button>
+    <div class="aba-cadastro">
+        <a href="mercadoria-form.html">Cadastrar mercadoria</a>
+    </div>
+    </div>
+    
 
     <!--mostrar todos as mercadorias
     cadastrar novo medicamento
@@ -21,5 +29,7 @@
     atualizar mercadoria
     exclui mercadoria 
     -->
+    <script src="/assets/js/mercadoria.js"></script>
 </body>
+
 </html>
