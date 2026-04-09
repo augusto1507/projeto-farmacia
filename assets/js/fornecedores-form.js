@@ -1,3 +1,9 @@
+window.addEventListener('load', () => {
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+  }
+});
+
 const botaoSalvar = document.getElementById("salvar")
 botaoSalvar.addEventListener("click", salvar)
 

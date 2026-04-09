@@ -1,3 +1,9 @@
+window.addEventListener('load', () => {
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+  }
+});
+
 const tbody = document.getElementById("body-fornecedores")
 
 function carregarFornecedores() {

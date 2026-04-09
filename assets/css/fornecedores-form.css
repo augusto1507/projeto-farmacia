@@ -1,0 +1,142 @@
+/* =====================
+   TEMA
+===================== */
+:root {
+  --primary: #4da3ff;
+  --primary-dark: #2c7be5;
+  --bg: #f5f9ff;
+  --text: #1e293b;
+  --card: #ffffff;
+  --border: #dbeafe;
+}
+
+body.dark {
+  --primary: #4da3ff;
+  --primary-dark: #1d4ed8;
+  --bg: #0f172a;
+  --text: #e2e8f0;
+  --card: #1e293b;
+  --border: #334155;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* MAIN */
+.main {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-content {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+/* VOLTAR */
+a[href="fornecedores.html"] {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* TÍTULO */
+h1 {
+  margin-bottom: 20px;
+}
+
+/* CARD FORM */
+.main-content > div {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  margin-bottom: 12px;
+}
+
+/* LABEL */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* BOTÃO */
+#salvar {
+  width: 100%;
+  padding: 12px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#salvar:hover {
+  background: var(--primary-dark);
+}
+
+/* REMOVE CARD DO BOTÃO */
+.main-content > div:last-child {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .main-content {
+    padding: 15px;
+  }
+}

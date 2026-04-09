@@ -1,3 +1,9 @@
+window.addEventListener('load', () => {
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+  }
+});
+
 let selectorFornecedor = document.getElementById("fornecedor")
 const API_URL_FORNECEDORES = `https://api.franciscosensaulas.com/api/v1/farmacia/fornecedores`
 const API_URL_COMPRAS = `https://api.franciscosensaulas.com/api/v1/farmacia/compras`
