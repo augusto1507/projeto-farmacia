@@ -1,37 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remédio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remédio</title>
+  <link rel="stylesheet" href="assets/css/remedio.css">
 </head>
+
 <body>
-      <a href="home.html">Home</a>
-    <h1>Remédios</h1>
+  <div class="app">
+    <header class="header">
+      <div class="header-left">
 
-    <a href="remedio-form.html">Cadastrar novo Remédio</a>
+        <a href="home.html" class="header-logo">FarmaVida</a>
+      </div>
+      <div class="header-right">
 
-    <table>
-        <thead>
+      </div>
+    </header>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <aside class="sidebar" id="sidebar">
+      <nav class="sidebar-nav">
+        <a href="home.html" class="nav-link"><i class="fas fa-gauge"></i> Home</a>
+        <a href="mercadoria.html" class="nav-link"><i class="fas fa-building-columns"></i> Mercadoria</a>
+        <a href="remedio.html" class="nav-link active"><i class="fas fa-users"></i> Usuarios</a>
+        <a href="categorias.html" class="nav-link "><i class="fas fa-tags"></i> Categorias</a>
+        <a href="config.html" class="nav-link"><i class="fas fa-arrow-right-arrow-left"></i> Configuração</a>
+        <a href="compras.html" class="nav-link"><i class="fas fa-book"></i> Compras</a>
+        <a href="fornecedores.html" class="nav-link"><i class="fas fa-pen-nib"></i> Fornecedores</a>
+      </nav>
+    </aside>
+    <main class="main">
+      <div class="main-content">
+        <nav class="breadcrumb">
+
+
+        </nav>
+        <h1>Remédios</h1>
+
+        <a href="remedio-form.html">Cadastrar novo Remédio</a>
+
+        <table>
+          <thead>
             <tr>
-                <th>ID</th>
-                <th>Nome</th>
-                <th>Preço</th>
-                <th>Categoria</th>
-                <th>Ações</th>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Preço</th>
+              <th>Categoria</th>
+              <th>Ações</th>
             </tr>
-        </thead>
-        <tbody id="tabela">
+          </thead>
+          <tbody id="tabela">
             <tr>
-                <td>01</td>
-                <td>Paracetamol</td>
-                <td>02</td>
-                <td>categoria</td>
-                
+              <td>01</td>
+              <td>Paracetamol</td>
+              <td>02</td>
+              <td>categoria</td>
+              <td>
+                <a href="/remedio-form.html?id=${remedio.id}">Editar</a>
+                <button class="botao-apagar" data-id="${remedio.id}">Excluir</button>
+              </td>
             </tr>
-        </tbody>
-    </table>
+          </tbody>
+        </table>
 
-    <script src="assets/js/remedio.js"></script>
+        <script src="assets/js/remedio.js"></script>
 </body>
+
 </html>
