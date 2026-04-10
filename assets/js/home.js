@@ -32,16 +32,44 @@ function criarLinha(remedio) {
         <td>${remedio.nome}</td>
         <td>${remedio.preco}</td>
         <td>${remedio.categoria?.nome}</td>
-        <td>
-        <a href="/remedio-form.html?id=${remedio.id}">Editar</a>
-        <button class="botao-apagar" data-id="${remedio.id}">Excluir</button>
-        </td>
+        
     `;
 
     tbodyRemedios.appendChild(tr);
 
 }
 
+const tbody = document.getElementById("body-fornecedores")
+
+function carregarFornecedores() {
+    fetch("https://api.franciscosensaulas.com/api/v1/farmacia/fornecedores")
+        .then((response) => {
+            return response.json()
+        })
+        .then((fornecedores) => {
+            tbody.innerHTML = ""
+            for (let i = 0; i < fornecedores.length; i++) {
+                let fornecedor = fornecedores[i]
+
+                const novaLinha = document.createElement("tr")
+                novaLinha.innerHTML = `
+            <td>${fornecedor.id}</td>
+            <td>${fornecedor.nome}</td>
+            <td>${fornecedor.cnpj}</td>
+            
+                                    `
+
+                tbody.appendChild(novaLinha)
+            }
+            
 
 
-carregarRemedios();
+        })
+        .catch((erro) => {
+            alert("Algo deu errado")
+        })
+
+    }
+
+carregarRemedios()
+carregarFornecedores()

@@ -1,3 +1,9 @@
+window.addEventListener('load', () => {
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+  }
+});
+
 const API_REMEDIOS_BASE_URL = "https://api.franciscosensaulas.com/api/v1/farmacia/remedios";
 const API_CATEGORIAS_BASE_URL = "https://api.franciscosensaulas.com/api/v1/farmacia/categorias-remedio";
 
