@@ -183,3 +183,28 @@ td a {
     transform: translateX(-100%);
   }
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 240px; /* acompanha a sidebar */
+  width: calc(100% - 240px);
+  background: var(--card);
+  border-top: 1px solid var(--border);
+  padding: 10px 20px;
+  font-size: 12px;
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media (max-width: 768px) {
+  .footer {
+    left: 0;
+    width: 100%;
+  }
+}
+
+
+

@@ -22,7 +22,7 @@ function carregarFornecedores() {
             <td>${fornecedor.nome}</td>
             <td>${fornecedor.cnpj}</td>
             <td>
-                <a data-id = "${fornecedor.id}" href="/fornecedores-form.html?id=${fornecedor.id}" data-action="edit">editar</a>
+                <a data-id = "${fornecedor.id}" href="fornecedores-form.html?id=${fornecedor.id}" data-action="edit">editar</a>
                 <button class="botao-apagar" data-id="${fornecedor.id}">
                 <i>Deletar</i>
                 </button>
