@@ -26,7 +26,7 @@ function carregarCategorias(){
                 <td>${categoria.nome}</td>
                 <td>${categoria.descricao}</td>
                 <td>
-                    <a href="/categorias-form.html?id=${categoria.id}">Editar</a>
+                    <a href="categorias-form.html?id=${categoria.id}">Editar</a>
                     <button class="botao-apagar" data-id="${categoria.id}">Excluir</button>
                 </td>`
 
